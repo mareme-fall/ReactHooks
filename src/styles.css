@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Style pour le conteneur de la liste de films */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style pour chaque carte de film */
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    /* Effet au survol */
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Style pour les images de film */
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les informations sur le film */
+.movie-info {
+    padding: 10px;
+}
+
+/* Style pour le titre du film */
+.movie-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Style pour la description du film */
+.movie-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Style pour la note du film */
+.movie-info p.rating {
+    font-weight: bold;
+    color: #ff9800;
+}
